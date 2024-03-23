@@ -1,4 +1,5 @@
 import Foundation
+
 // 1. შექმენით Enum-ი სახელით WeekDay შესაბამისი ქეისებით. დაწერეთ ფუნქცია რომელიც იღებს ამ ენამის ტიპს და ბეჭდავს გადაწოდებული დღე სამუშაოა თუ დასვენების.
 
 enum Weekdays {
@@ -58,5 +59,6 @@ struct Kanye {
 }
 
 var kanye: [String: Int] =  ["album1": 2000, "album2": 2001, "album3": 2002]
+
 
 
