@@ -1,7 +1,15 @@
 import Foundation
 
 // 1. დაწერეთ ფუნქცია რომელიც პარამეტრად მიიღებს String-ს და დააბრუნებს ბულიანს. ფუნქციამ უნდა შეამოწმოს მიღებული სტრინგი სარკისებურია თუ არა (სიტყვა ან წინადადება რომელიც იკითხება ერთნაირად როგორც თავიდან, ისე ბოლოდან მაგ: “ანა”, “აირევი ივერია”, “მადამ”)
-
+func check(text: String) -> Bool {
+    var text2 = String(text.reversed())
+    print(" \(text) reversed is \(text2)")
+    if text2 == text {
+        print("It is reversed")
+    }
+    return text2 == text
+}
+check(text: "madam")
     
 // 2. დაწერეთ ფუნქცია რომელიც გადაცემულ რიცხვების array-ს ააკვარდატებს, დაპრინტავს და დააბრუნებს მნიშვნელობას.
 
@@ -16,12 +24,6 @@ let doubled = doubleArray(array: [1, 2, 3, 4, 5])
 
 // 3. დაწერეთ Closure რომელიც გაფილტრავს ლუწ რიცხვებს Int-ების Array-დან.
 
-//var numbers = [1, 2, 3, 4, 5, 6]
-//for even in numbers{
-//    if even % 2 == 0 {
-//        print(even)
-//    }
-//}
 func evenNumbers (array: [Int])  {
     for even in array {
         if even % 2 == 0 {
@@ -46,6 +48,10 @@ contactDict.removeValue(forKey: "Gela")
 print(contactDict)
 
 // 6. დაწერეთ ფუნქცია რომელიც პარამეტრად იღებს [String: Int] ტიპის Dictionary-ს და დააბრუნებს ანბანურად დალაგებულ dictionary-ს key
+func sortByKey (_: [String: Int]){
+   
+    
+}
 
 // 7. შექმენით Double-ების მასივი, შეავსეთ ის თქვენთვის სასურველი რიცხვებით.  loop-ის გამოყენებით იპოვეთ ყველაზე დიდი რიცხვი ამ მასივში და დაბეჭდეთ.
 
@@ -54,5 +60,6 @@ print(contactDict)
 //for maxNum in doubleArray.sorted(){
 //    print(maxNum )
 //}
+
 
 
