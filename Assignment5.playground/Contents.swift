@@ -61,5 +61,38 @@ func sortByKey (_: [String: Int]){
 //    print(maxNum )
 //}
 
+//func repeatStr(_ n: Int, _ string: String) -> String {
+//    var check = string
+//    for _ in 1...n {
+//        check
+//    }
+//    return check
+//}
+//print(repeatStr( 5, "hello"))
 
 
+func evenOrOdd(_ number:Int) -> String {
+    let even =  number % 2
+    let odd = number % 2
+    if even == 0 {
+        return "even"
+    } else {
+        return "odd"
+    }
+}
+evenOrOdd(2)
+
+func grow(_ arr: [Int]) -> Int {
+    var num1 = 1
+    for i in arr {
+        num1 *= i
+    }
+    return num1
+}
+grow([2, 2, 2, 2, 2, 2])
+
+func simpleMultiplication(_ num: Int) -> Int {
+    num % 2 == 0 ?  num * 8 : num * 9
+}
+
+simpleMultiplication(3)
